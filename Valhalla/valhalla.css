@@ -58,7 +58,7 @@ section {
 }
 
 img {
-    max-width: 800px;
+    max-width: auto;
     height: 300px;
 
 }
