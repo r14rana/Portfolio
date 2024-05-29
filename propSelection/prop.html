@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Aircraft Propeller Calculator</title>
+    <link rel="stylesheet" href="prop.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RC Aircraft Propeller Calculator</h1>
+        <form id="propeller-form">
+            <label for="wingspan">Wingspan (in inches):</label>
+            <input type="number" id="wingspan" step="0.01" required>
+            
+            <label for="wing_area">Wing Area (in square inches):</label>
+            <input type="number" id="wing_area" step="0.01" required>
+            
+            <label for="pitch_speed">Pitch Speed (in miles per hour):</label>
+            <input type="number" id="pitch_speed" step="0.01" required>
+            
+            <button type="button" onclick="calculatePropeller()">Calculate</button>
+        </form>
+        <div id="results">
+            <h2>Results</h2>
+            <p id="aspect_ratio"></p>
+            <p id="prop_diameter"></p>
+            <p id="prop_pitch"></p>
+        </div>
+    </div>
+    <script src="prop.js"></script>
+</body>
+</html>
