@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Time Calculator</title>
+    <link rel="stylesheet" href="flightTimeCalculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Time Calculator</h1>
+        <div class="input-container">
+            <label for="mAh">Battery Capacity (mAh):</label>
+            <input type="number" id="mAh">
+        </div>
+        <div class="input-container">
+            <label for="motorAmp">Maximum Amps by Motor (Amps):</label>
+            <input type="number" id="motorAmp">
+        </div>
+        <button onclick="calculateFlightTime()">Calculate Flight Time</button>
+        <div id="result"></div>
+    </div>
+    <script src="flightTimeCalculator.js"></script>
+</body>
+</html>
