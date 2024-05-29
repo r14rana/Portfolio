@@ -56,7 +56,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #16b1cc;
+    border-bottom: 2px solid #333;
     padding-bottom: 10px;
 }
 
@@ -98,7 +98,7 @@ form {
 button {
     padding: 10px;
     border: none;
-    background-color: #1120ed;
+    background-color: #333;
     color: white;
     cursor: pointer;
 }
@@ -108,7 +108,7 @@ button:hover {
 }
 
 footer {
-    background-color: #16b1cc;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
