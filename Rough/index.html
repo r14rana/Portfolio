@@ -3,64 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
-    <link rel="stylesheet" href="valhalla.css">
+    <title>Streak Counter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Valhalla-DDC2024048</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#pdf">View PDF</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <h1>Streak Counter</h1>
+        <div class="streak-display">
+            <p>Your current streak is:</p>
+            <h2 id="streak-count">0</h2>
         </div>
-    </header>
-    
-    <section id="home">
-        <div class="container">
-            <h2>Desing Report</h2>
-            <p>Building an aircraft is no joke. Let it be a small scale or large scale. Every  dreams and ambitions have its challenges, with  those challenges in mind this was the design report for the DDC-2024 conducted by SAE INDIA.</p>
-        </div>
-    </section>
-
-    <section id="pdf">
-        <div class="container">
-            <h2>View PDF</h2>
-            <embed src="Valhalla-DDC2024048.pdf" type="application/pdf" width="100%" height="600px" />
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 PDF Viewer. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="valhalla.js"></script>
+        <button id="increment-btn">Increment Streak</button>
+        <button id="reset-btn">Reset Streak</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
