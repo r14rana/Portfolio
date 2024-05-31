@@ -5,6 +5,12 @@ body {
     padding: 0;
 }
 
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: #921f72;
+}
+
 img{
     height: 170px;
     width: auto;

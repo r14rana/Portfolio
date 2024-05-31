@@ -1,0 +1,47 @@
+Home
+  - Introduction
+  - Professional Headshot
+
+About Me
+  - Biography
+  - Skills
+  - Resume/CV
+
+Projects/Portfolio
+  - Project Thumbnails
+  - Project Descriptions
+  - Links
+
+Experience
+  - Work Experience
+  - Volunteer Work
+
+Education
+  - Academic Background
+
+Blog (Optional)
+  - Posts
+  - Categories/Tags
+
+Testimonials
+  - Client/Peer Reviews
+  - LinkedIn Recommendations
+
+Contact
+  - Contact Form
+  - Email Address
+  - Phone Number (Optional)
+  - Social Media Links
+
+Certifications and Awards
+  - Certificates
+  - Awards
+
+Interests and Hobbies (Optional)
+  - Personal Interests
+
+FAQs (Optional)
+  - Common Questions
+
+
+
