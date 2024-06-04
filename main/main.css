@@ -120,59 +120,40 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-@media(max-width:900px)
-{
-    header
-    {
-        padding:10px 20px;
-    }
-    header nav
-    {
-        position: absolute;
-        width: 100%;
-        top: 56px;
-        left: 0;
-        background: #16b1cc;
-    }
-    header nva ul li
-    {
-        width: 100%;
-    }
-    header nav ul li ul
-    {
-        position: relative;
-        width: 100%;
-        left:0;
 
-    }
-    .menueToggle
-    {
-        position: relative;
-        width: 40px;
-        height: 50px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16b1cc;
+    color: #fff;
+    padding: 20px;
+}
 
-    }
-    .menueToggle::before
-    {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background-color: #16b1cc;
-        transform: translateY(-12px);
-        box-shadow: 0 12px #f4f4f4;
-    }
-    .menueToggle::after
-    {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background-color: #16b1cc;
-        transform: translateY(-12px);
-    }
+.container .nav-links {
+    list-style: none;
+}
+
+.container .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.container .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .burger {
+    display: none;
+    cursor: pointer;
+}
+
+.container .line1,
+.container .line2,
+.container .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
 }
