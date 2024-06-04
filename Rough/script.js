@@ -1,21 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const streakCountElement = document.getElementById("streak-count");
-    const incrementButton = document.getElementById("increment-btn");
-    const resetButton = document.getElementById("reset-btn");
-
-    // Load streak count from local storage or set to 0 if not available
-    let streakCount = parseInt(localStorage.getItem("streakCount")) || 0;
-    streakCountElement.textContent = streakCount;
-
-    incrementButton.addEventListener("click", () => {
-        streakCount++;
-        streakCountElement.textContent = streakCount;
-        localStorage.setItem("streakCount", streakCount);
+// Optional JavaScript for enhanced interactivity, not necessary for basic dropdown functionality
+document.addEventListener('DOMContentLoaded', (event) => {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', () => {
+            dropdown.querySelector('.dropdown-content').classList.toggle('show');
+        });
     });
 
-    resetButton.addEventListener("click", () => {
-        streakCount = 0;
-        streakCountElement.textContent = streakCount;
-        localStorage.setItem("streakCount", streakCount);
-    });
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            const dropdownContents = document.querySelectorAll('.dropdown-content');
+            dropdownContents.forEach(content => {
+                if (content.classList.contains('show')) {
+                    content.classList.remove('show');
+                }
+            });
+        }
+    }
 });
