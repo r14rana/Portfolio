@@ -1,20 +1,7 @@
-// Optional JavaScript for enhanced interactivity, not necessary for basic dropdown functionality
-document.addEventListener('DOMContentLoaded', (event) => {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', () => {
-            dropdown.querySelector('.dropdown-content').classList.toggle('show');
-        });
-    });
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
 
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            const dropdownContents = document.querySelectorAll('.dropdown-content');
-            dropdownContents.forEach(content => {
-                if (content.classList.contains('show')) {
-                    content.classList.remove('show');
-                }
-            });
-        }
-    }
+burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
 });
