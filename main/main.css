@@ -120,3 +120,43 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+<<<<<<< HEAD
+=======
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16b1cc;
+    color: #fff;
+    padding: 20px;
+}
+
+.container .nav-links {
+    list-style: none;
+}
+
+.container .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.container .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .burger {
+    display: none;
+    cursor: pointer;
+}
+
+.container .line1,
+.container .line2,
+.container .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+}
+>>>>>>> d8ded61502fa1b5ee034606cd46e95b5c97a5250
