@@ -3,27 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Expense Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <h1>hai</h1>
-            Logo
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        
+        <!-- Daily Expense Form -->
+        <section>
+            <h2>Add Daily Expense</h2>
+            <form id="expense-form">
+                <label for="expense-date">Date:</label>
+                <input type="date" id="expense-date" required>
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name" required>
+                <label for="expense-amount">Expense Amount (INR):</label>
+                <input type="number" id="expense-amount" required>
+                <button type="submit">Add Expense</button>
+            </form>
+            <div class="summary">
+                <h2>Today's Expenses</h2>
+                <ul id="expense-list"></ul>
+                <p>Total: <span id="total-amount">₹0.00</span></p>
+            </div>
+            <button id="clear-expenses-btn">Clear Today's Expenses</button>
+        </section>
+
+        <!-- Monthly Expense Summary -->
+        <section>
+            <h2>Monthly Expense Summary</h2>
+            <form id="month-form">
+                <label for="month-select">Select Month:</label>
+                <input type="month" id="month-select" required>
+                <button type="submit">Show Summary</button>
+            </form>
+            <div class="summary">
+                <h2>Monthly Expenses</h2>
+                <ul id="monthly-expense-list"></ul>
+                <p>Total: <span id="monthly-total-amount">₹0.00</span></p>
+            </div>
+            <button id="clear-monthly-expenses-btn">Clear Monthly Expenses</button>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>

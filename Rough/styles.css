@@ -1,69 +1,68 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    font-size: 24px;
+h1, h2 {
+    text-align: center;
 }
 
-.nav-links {
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="month"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+#expense-list, #monthly-expense-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#expense-list li, #monthly-expense-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    width: 50%;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.burger {
-    display: none; /* Hide initially on larger screens */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.line1, .line2, .line3 {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px;
-}
-@media screen and (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        right: 0;
-        height: 92vh; /* Adjust as needed */
-        top: 80px; /* Adjust as needed */
-        background-color: #333;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .nav-active {
-        transform: translateX(0);
-    }
-
-    .nav-links li {
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out;
-    }
 }
