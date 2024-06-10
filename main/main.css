@@ -12,6 +12,11 @@ body {
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.portfolio{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1a0375;
+}
 
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
