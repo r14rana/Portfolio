@@ -1,3 +1,11 @@
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function closeSidebar(){
+    const sidebar= document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 
