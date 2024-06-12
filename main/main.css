@@ -199,3 +199,6 @@ footer {
     display: flex;
     justify-content: center;
 }
+.container ul{
+    padding: 0 17px;
+}
